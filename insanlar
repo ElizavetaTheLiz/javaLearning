@@ -1,0 +1,64 @@
+public class Insanlar {
+    int yasi;
+    int kilosu;
+    String adi;
+    double boyu;
+    int sinifi;
+
+    void konus() {
+        System.out.println("Benim adım " + adi);
+    }
+
+    void neKadarUzayacak(){
+        double uzama= 1.8- boyu;
+        System.out.println(uzama+ "m daha uzayacağım.");
+    }
+
+    int okulYili(){
+        int kalanOkulYili= 12- sinifi;
+
+        return kalanOkulYili;
+        }
+
+    int getKilosu(){
+        return kilosu;
+    }
+
+    public int getYasi() {
+        return yasi;
+    }
+
+
+
+}
+
+/*
+kendime not:
+
+Getter yapısı kullandık burada.
+Bu önemli bir özellik ve daha çok tekrar etmen gerekecek.
+Hele ki settera iyi bak.
+
+ */
+
+class yeniInsanlar{
+    public static void main(String[] args){
+        Insanlar insan1= new Insanlar();
+        insan1.adi= "Leyla";
+        insan1.boyu= 1.3;
+        insan1.sinifi=2;
+        insan1.kilosu= 20;
+        insan1.yasi=7;
+
+        insan1.konus();
+        insan1.neKadarUzayacak();
+
+        int kilosu = insan1.kilosu;
+        int yasi=  insan1.yasi;
+
+        System.out.println(kilosu + "kg ağrlığında ve " + yasi + " yaşındayım.");
+
+        int yil= insan1.okulYili();
+        System.out.println(yil + " yıl daha okulda okuyacağım.");
+    }
+}

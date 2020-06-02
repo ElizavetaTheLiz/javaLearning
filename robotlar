@@ -1,0 +1,15 @@
+class Robot {
+    public void hareket(String yon, int uzaklik){
+        System.out.println(yon + " yönünde, " + uzaklik + " metre kadarki hareketim başlamıştır.");
+    }
+}
+
+public class Robotlar {
+
+    public static void main(String[] args){
+        Robot abdullah= new Robot();
+
+        int uzakligim= 3;
+    abdullah.hareket("doğu", uzakligim);
+    }
+}

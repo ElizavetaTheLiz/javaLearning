@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class HDoWhile {
+    public static void main(String[] args){
+
+    Scanner input = new Scanner(System.in);
+
+    int tahmin;
+    do{
+        System.out.println("Hadi yaşımı tahmin et:");
+        tahmin=input.nextInt();
+        System.out.println("Yanlış bildin.");
+    }
+    while (tahmin != 18);
+        System.out.println("Şakaaaaaa doğruydu 18 oldum beğn.");
+    }
+}

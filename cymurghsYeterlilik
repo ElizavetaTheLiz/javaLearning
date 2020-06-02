@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class GscannerClass {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Cymurghs üye başvurusu yeterlilik testine hoş geldiniz!");
+
+        System.out.println("Yaşınızı giriniz:");
+
+        double yas = input.nextDouble();
+
+        System.out.println("Teknoloji aşkınızı 10 üzerinden değerlendirin:");
+
+        double tek = input.nextDouble();
+
+        System.out.println("10 üzerinden takım ruhuna ne kadar sahipsin? :");
+
+        double ruh = input.nextDouble();
+
+
+
+
+
+        if (yas < 13 && tek < 7 && ruh < 7) {
+            System.out.println("Henüz hazır değilsin...");
+        }
+
+        else if (yas < 13 && tek < 7 && ruh >= 7) {
+            System.out.println("Önünde çok zaman var, teknolojiyi keşfetmeye ne dersin?");
+        }
+
+        else if (yas < 13 && tek >= 7 && ruh < 7) {
+            System.out.println("Birkaç sene sonra bize katılmayı dene, belki aradığın takım ruhunu burada bulursun.");
+        }
+
+        else if (yas < 13 && tek >= 7 && ruh >= 7) {
+            System.out.println("Büyümüş de küçülmüş! Bize katılmanı sabırsızlıkla bekliyor olacağız.");
+        }
+
+
+
+
+        else if (yas <= 18 && yas>=13 && tek < 7 && ruh < 7) {
+            System.out.println("Yaşın uygun olsa da biz teknoloji tutkunu çocuklar aramaktayız.");
+        }
+
+        else if (yas <= 18 && yas>=13 && tek < 7 && ruh >= 7) {
+            System.out.println("Teknolojiyle tanışma vakti!");
+        }
+
+        else if (yas <= 18 && yas>=13 && tek >= 7 && ruh < 7) {
+            System.out.println("Sosyal etkinlikler dünyasını keşfet ve sonra bize katıl!");
+        }
+
+        else if (yas <= 18 && yas>=13 && tek >= 7 && ruh >= 7) {
+            System.out.println("SEN TAM ARADIĞIMIZ KIŞISIN! Yoksa sen bir Cymurghian mısın?");
+        }
+
+
+
+

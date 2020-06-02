@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class IswitchClass {
+public static void main(String[] args){
+
+    Scanner girdi= new Scanner(System.in);
+    System.out.println("Hangi mevsimdeyiz? :");
+    String mevsim= girdi.nextLine();
+
+    switch (mevsim){
+        case "ilkbahar":
+            System.out.println("Çiçekleri severim!");
+            break;
+
+        case "bahar":
+            System.out.println("Çiçekleri severim!");
+            break;
+
+        case "kış":
+            System.out.println("Üşütme sakın!");
+            break;
+
+        case "sonbahar":
+            System.out.println("Ah yapraklar ve yüce toprak kokusu.");
+            break;
+
+        case "güz":
+            System.out.println("Ah yapraklar ve yüce toprak kokusu.");
+            break;
+
+        case "yaz":
+            System.out.println("Yaşasın yüzmekk");
+            break;
+
+
+        default:
+            System.out.println("Bu nasıl bir mevsim böyle.");
+            break;
+    }
+}
+}

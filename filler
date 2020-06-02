@@ -1,0 +1,29 @@
+public class Filler {
+    int yası;
+    int kilosu;
+    String rengi;
+    double boyu;
+
+    void sescikar(){
+        System.out.println("Truuuuuuuuu!");
+    }
+}
+
+
+class benimFiller{
+    public static void main(String[] args){
+        Filler fil1= new Filler();
+        fil1.rengi= "gray";
+        fil1.kilosu= 200;
+        fil1.boyu= 3;
+        fil1.yası=10;
+
+
+        Filler fil2= new Filler();
+        fil2.rengi= "blue";
+        fil2.kilosu= 150;
+        fil2.boyu= 2.5;
+        fil2.yası=10;
+        fil2.sescikar();
+    }
+}

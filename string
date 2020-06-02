@@ -1,0 +1,18 @@
+public class Cstrings {
+    public static void main(String[] args){
+
+     String kelime= "Cymurghs";
+     String kelime2= "benim";
+     String kelime3= "takımım";
+     char basharf= kelime.charAt(0);
+     int sayi= 12;
+
+
+     System.out.println(kelime + " " + kelime2 + " " + kelime3 + "!");
+     System.out.println("Takımdaki developer sayısı:" +sayi);
+     System.out.println("Baş harfimiz:" + basharf);
+     System.out.println( kelime.toUpperCase() + kelime2.replace("beni", ": küllerinden doğan anka"));
+
+
+    }
+}
